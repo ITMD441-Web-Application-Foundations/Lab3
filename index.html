@@ -2,13 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <script src="js/tip-calculator.js"></script>
   <title>Tip Calculator</title>
 </head>
 <body>
+  <div class="container">
+    <h3>ITMD 451 - Lab 3 - Josh Reginaldo</h3>
+    <h1>Tip Calculator</h1>
 
+    <label for="billTotal">Bill Total:
+      <input type="text" class="form-control" placeholder="Text input" id="billTotal">
+    </label>
+
+    <label for="tipSlider">Tip:
+      <input type="range" min="1" max="100" value="50" class="slider" id="tipSlider">
+    </label>
+
+    <label for="tipPercentage"> Tip Percentage:
+    <input class="form-control" id="tipPercentage" type="text" placeholder="Disabled input here..." disabled>
+    </label>
+
+    <label for="tipAmount"> Tip Amount:
+    <input class="form-control" id="tipAmount" type="text" placeholder="Disabled input here..." disabled>
+    </label>
+
+    <label for="finalTotal"> Total Bill with Tip:
+    <input class="form-control" id="finalTotal" type="text" placeholder="Disabled input here..." disabled>
+    </label>
+  </div>
 </body>
 </html>
