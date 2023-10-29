@@ -20,8 +20,8 @@
       </div>
       <div class="tipSliderRow">
         <label for="tipSlider">Tip:</label>
-        <input class="slider" id="tipSlider" type="range"
-               min="0" max="100" value="0" step="1">
+        <input class="slider" id="tipSlider" type="range" oninput="tipCalculator()"
+               min="0" max="100" value="0" step="1" required> <!-- Run tipCalculator everytime the slider is moved-->
       </div>
       <div class="tipPercentageRow">
         <label for="tipPercentage"> Tip Percentage:</label>
