@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+  <!-- Bootstrap: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <script src="js/tip-calculator.js"></script>
@@ -20,20 +23,20 @@
       </div>
       <div class="tipSliderRow">
         <label for="tipSlider">Tip:</label>
-        <input class="slider" id="tipSlider" type="range" oninput="tipCalculator()"
+        <input class="form-control-range" id="tipSlider" type="range" oninput="tipCalculator()"
                min="0" max="100" value="0" step="1" required> <!-- Run tipCalculator everytime the slider is moved-->
       </div>
       <div class="tipPercentageRow">
         <label for="tipPercentage"> Tip Percentage:</label>
-        <input class="text" id="tipPercentage" type="text" disabled>
+        <input class="form-control" id="tipPercentage" type="text" disabled>
       </div>
       <div class="tipAmountRow">
         <label for="tipAmount"> Tip Amount:</label>
-        <input class="text" id="tipAmount" type="text" disabled>
+        <input class="form-control" id="tipAmount" type="text" disabled>
       </div>
       <div class="finalTotalRow">
         <label for="finalTotal"> Total Bill with Tip:</label>
-        <input class="text" id="finalTotal" type="text" disabled>
+        <input class="form-control" id="finalTotal" type="text" disabled>
       </div>
     </form>
   </div>
