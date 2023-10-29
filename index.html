@@ -13,20 +13,23 @@
     <h3>ITMD 451 - Lab 3 - Josh Reginaldo</h3>
     <h1>Tip Calculator</h1>
 
-    <label for="billTotal">Bill Total:</label>
-    <input type="text" class="form-control" placeholder="Total Bill Before Tip" id="billTotal">
+    <form class="tipCalculator">
+      <label for="billTotal">Bill Total:</label>
+      <input type="text" class="form-control" placeholder="Total Bill Before Tip" id="billTotal">
 
-    <label for="tipSlider">Tip:</label>
-    <input type="range" min="0" max="100" value="50" class="slider" id="tipSlider">
+      <label for="tipSlider">Tip:</label>
+      <input class="slider" id="tipSlider" type="range"
+             min="0" max="100" value="0" step="1">
 
-    <label for="tipPercentage"> Tip Percentage:</label>
-    <input class="text" id="tipPercentage" type="text" disabled>
+      <label for="tipPercentage"> Tip Percentage:</label>
+      <input class="text" id="tipPercentage" type="text" disabled>
 
-    <label for="tipAmount"> Tip Amount:</label>
-    <input class="text" id="tipAmount" type="text" disabled>
+      <label for="tipAmount"> Tip Amount:</label>
+      <input class="text" id="tipAmount" type="text" disabled>
 
-    <label for="finalTotal"> Total Bill with Tip:</label>
-    <input class="text" id="finalTotal" type="text" disabled>
+      <label for="finalTotal"> Total Bill with Tip:</label>
+      <input class="text" id="finalTotal" type="text" disabled>
+    </form>
   </div>
 </body>
 </html>
